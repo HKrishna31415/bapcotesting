@@ -1,0 +1,5 @@
+{
+  "name": "Acoustic & Thermal Footprint Assessment",
+  "description": "An animated dashboard displaying the results of an acoustic, thermal, and shade impact assessment for an industrial unit, providing a clear visualization of its environmental footprint.",
+  "requestFramePermissions": []
+}

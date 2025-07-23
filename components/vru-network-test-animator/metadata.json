@@ -1,0 +1,5 @@
+{
+  "name": "VRU Network Test Animator",
+  "description": "An interactive animation explaining the data and connectivity integrity testing procedure for a Vapor Recovery Unit (VRU), from physical cable checks to performance testing.",
+  "requestFramePermissions": []
+}

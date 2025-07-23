@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOC Emissions Measurement Animator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* For custom animations */
+        @keyframes flow-dots {
+            from { 
+                offset-distance: 0%; 
+                opacity: 0;
+            }
+            5% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            to { 
+                offset-distance: 100%;
+                opacity: 0;
+            }
+        }
+        .animate-flow-dots {
+            animation: flow-dots 1.5s linear infinite;
+            offset-rotate: 0deg; /* Keep dots upright */
+        }
+
+        @keyframes fill-bar {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+        .animate-fill-bar {
+            animation: fill-bar 8s linear forwards;
+        }
+
+        @keyframes fill-bar-short {
+            from { width: 0%; }
+            to { width: 25%; }
+        }
+        .animate-fill-bar-short {
+            animation: fill-bar-short 2s linear forwards;
+        }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

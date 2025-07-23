@@ -1,0 +1,5 @@
+{
+  "name": "VOC Emissions Measurement Animator",
+  "description": "An animated web application that visually compares the 'Gold Standard' and 'Silver Standard' options for VOC emissions measurement, highlighting their methodologies, pros, and cons.",
+  "requestFramePermissions": []
+}
