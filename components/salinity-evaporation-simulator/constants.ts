@@ -1,0 +1,6 @@
+
+export const MAX_VOLUME = 100;
+export const EVAPORATION_TARGET_VOLUME = 50;
+export const EVAPORATION_STEP_AMOUNT = 1;
+export const EVAPORATION_INTERVAL_MS = 150;
+export const TRANSITION_DURATION_MS = 2000;

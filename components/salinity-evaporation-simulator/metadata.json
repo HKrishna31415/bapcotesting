@@ -1,0 +1,5 @@
+{
+  "name": "Salinity Evaporation Simulator",
+  "description": "An interactive animation demonstrating the process of water evaporation and condensation, showing how salinity changes in the source water and how evaporated water is purified.",
+  "requestFramePermissions": []
+}

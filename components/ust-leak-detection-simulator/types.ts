@@ -1,0 +1,13 @@
+
+export enum Scenario {
+  LEAKING = 'LEAKING',
+  SEALED = 'SEALED',
+}
+
+export enum Phase {
+  IDLE = 'IDLE',
+  PRESSURIZING = 'PRESSURIZING',
+  STABILIZING = 'STABILIZING',
+  MONITORING = 'MONITORING',
+  RESULT = 'RESULT',
+}

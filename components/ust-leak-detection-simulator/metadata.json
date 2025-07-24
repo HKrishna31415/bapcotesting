@@ -1,0 +1,5 @@
+{
+  "name": "UST Leak Detection Simulator",
+  "description": "An interactive web application that simulates the CARB Test Procedure TP-201.1 for detecting leaks in Underground Storage Tank (UST) systems. Users can visualize both leaking and sealed scenarios to understand the pressure testing process.",
+  "requestFramePermissions": []
+}

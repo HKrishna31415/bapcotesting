@@ -1,0 +1,5 @@
+{
+  "name": "Nitrogen Pressurization Simulator",
+  "description": "An interactive animation that demonstrates nitrogen pressurization in a tank, showing the difference between a sealed system and one with a leak. Particles move realistically, bouncing off walls and escaping through the leak when present.",
+  "requestFramePermissions": []
+}

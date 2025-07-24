@@ -1,0 +1,5 @@
+{
+  "name": "Nitrogen Leak Test Simulator",
+  "description": "An interactive web application that provides a visual animation of the process of using nitrogen gas to test for leaks in an industrial tank and piping system, including the before and after states of a repair.",
+  "requestFramePermissions": []
+}

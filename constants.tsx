@@ -78,6 +78,39 @@ const WifiIcon: React.FC<{ className?: string }> = ({ className }) => (
   </svg>
 );
 
+const ProtocolIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0v6m0-6h6m0-6H6" />
+  </svg>
+);
+
+const NitrogenIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 10.5V6m0 4.5c-4.639 0-8.43 3.75-8.43 8.375S7.361 23.25 12 23.25s8.43-3.75 8.43-8.375S16.639 10.5 12 10.5z" />
+  </svg>
+);
+
+const VaporLossIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+  </svg>
+);
+
+const UstLeakIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 22V10M12 10a4 4 0 01-4-4V4a4 4 0 018 0v2a4 4 0 01-4 4z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 22a4 4 0 004-4v-2a4 4 0 00-8 0v2a4 4 0 004 4z" />
+  </svg>
+);
+
+const SalinityIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18m0-18c-2.5 0-5 1.5-7.5 3s-5 3-7.5 4.5m15-7.5c2.5 0 5 1.5 7.5 3s5 3 7.5 4.5" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18m0-18c-2.5 0-5 1.5-7.5 3s-5 3-7.5 4.5m15-7.5c2.5 0 5 1.5 7.5 3s5 3 7.5 4.5" />
+  </svg>
+);
+
 export const TEST_DATA: TestInfo[] = [
   {
     id: 12,
@@ -95,6 +128,101 @@ export const TEST_DATA: TestInfo[] = [
       'Certified verification of total system capture & destruction efficiency, with a minimum of 98% VOC destruction.',
       'Pinpoint specific sources of emissions for targeted repairs.',
       'Ensure compliance with the most stringent air quality standards.',
+    ],
+    highlighted: true,
+  },
+  {
+    id: 17,
+    title: 'Nitrogen Pressurization Simulator',
+    path: 'nitrogen-pressurization-simulator',
+    icon: <NitrogenIcon className="w-8 h-8" />,
+    requirements: [
+      'Simulates the behavior of nitrogen particles in a pressurized tank.',
+      'Visualizes particle movement and pressure changes.',
+      'Allows toggling a leak to observe particle escape.',
+      'Demonstrates principles of gas pressure and containment.'
+    ],
+    promises: [
+      'Interactive simulation to understand gas dynamics.',
+      'Clear visual representation of particle physics.',
+      'Educational tool for demonstrating pressure and leak effects.',
+      'Provides insights into industrial safety and containment systems.'
+    ],
+    highlighted: true,
+  },
+  {
+    id: 16,
+    title: 'Vapor Loss Animation',
+    path: 'vapor-loss-animation',
+    icon: <VaporLossIcon className="w-8 h-8" />,
+    requirements: [
+      'Illustrates the concept of breathing loss in fuel tanks.',
+      'Demonstrates how manifolding tanks without VRU increases vapor loss.',
+      'Visualizes the process of vapor recovery with a VRU.',
+      'Explains the environmental and economic benefits of VRU systems.'
+    ],
+    promises: [
+      'Interactive animation to understand vapor dynamics in fuel storage.',
+      'Clear visual representation of vapor loss and recovery processes.',
+      'Educational tool for demonstrating environmental compliance and efficiency.',
+      'Provides insights into fuel conservation and pollution prevention.'
+    ],
+    highlighted: true,
+  },
+  {
+    id: 15,
+    title: 'UST Leak Detection Simulator',
+    path: 'ust-leak-detection-simulator',
+    icon: <UstLeakIcon className="w-8 h-8" />,
+    requirements: [
+      'Simulates the CARB Test Procedure TP-201.1 for UST leak detection.',
+      'Visualizes pressure changes in an underground storage tank system.',
+      'Demonstrates pressurization, stabilization, and monitoring phases.',
+      'Allows selection of leaking or sealed tank scenarios.'
+    ],
+    promises: [
+      'Interactive simulation to understand UST leak detection principles.',
+      'Clear visual representation of tank pressure dynamics.',
+      'Educational tool for demonstrating environmental compliance procedures.',
+      'Provides insights into fuel storage safety and regulations.'
+    ],
+    highlighted: true,
+  },
+  {
+    id: 14,
+    title: 'Salinity Evaporation Simulator',
+    path: 'salinity-evaporation-simulator',
+    icon: <SalinityIcon className="w-8 h-8" />,
+    requirements: [
+      'Simulates the evaporation of water and the increase in salinity.',
+      'Visualizes the separation of pure water from salt.',
+      'Demonstrates the concept of concentration due to evaporation.',
+      'Allows adjustment of initial salinity for different scenarios.'
+    ],
+    promises: [
+      'Interactive simulation to understand salinity and evaporation principles.',
+      'Clear visual representation of water and salt dynamics.',
+      'Educational tool for demonstrating environmental processes.',
+      'Provides insights into water treatment and desalination concepts.'
+    ],
+    highlighted: true,
+  },
+  {
+    id: 13,
+    title: 'Product Recovery Protocol Visualizer',
+    path: 'product-recovery-protocol-visualizer',
+    icon: <ProtocolIcon className="w-8 h-8" />,
+    requirements: [
+      'Follows a three-phase protocol for product recovery.',
+      'Includes neat sample characterization, lab blend simulation, and in-situ UST monitoring.',
+      'Ensures recovered product meets ASTM standards and BAPCO specs.',
+      'Requires weekly dispenser sample testing during in-situ monitoring.'
+    ],
+    promises: [
+      'Visual representation of each phase of the product recovery protocol.',
+      'Clear understanding of the steps involved in ensuring product quality.',
+      'Highlights key testing and monitoring activities at each stage.',
+      'Provides confidence in the quality and usability of recovered product.'
     ],
     highlighted: true,
   },

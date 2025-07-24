@@ -21,7 +21,8 @@ import { useState } from 'react';
 import Header from './components/Header';
 import TestCard from './components/TestCard';
 import { TEST_DATA } from './constants';
-import AcousticThermalFootprintAssessmentApp from './components/acoustic-&-thermal-footprint-assessment/AcousticThermalFootprintAssessmentApp';
+import AuditoryTestApp from './components/auditory-listening-test/AuditoryTestApp';
+import ThermalTestApp from './components/thermal-imaging-test/ThermalTestApp';
 import AdvancedRecoveryMachineComponentListApp from './components/advanced-recovery-machine---component-list/AdvancedRecoveryMachineComponentListApp';
 import EthanolGasolineEvaporationStoryApp from './components/ethanol-gasoline-evaporation-story/EthanolGasolineEvaporationStoryApp';
 import OdorTestAnimationApp from './components/odor-test-animation/OdorTestAnimationApp';
@@ -29,6 +30,15 @@ import VocEmissionsMeasurementAnimatorApp from './components/voc-emissions-measu
 import VruElectricalUsageTestingAnimationApp from './components/vru-electrical-usage-testing-animation/VruElectricalUsageTestingAnimationApp';
 import VruNetworkTestAnimatorApp from './components/vru-network-test-animator/VruNetworkTestAnimatorApp';
 import VruValidationProtocolApp from './components/vru-validation-protocol/VruValidationProtocolApp';
+import ProductRecoveryProtocolVisualizerApp from './components/product-recovery-protocol-visualizer/ProductRecoveryProtocolVisualizerApp';
+import SalinityEvaporationSimulatorApp from './components/salinity-evaporation-simulator/SalinityEvaporationSimulatorApp';
+import UstLeakDetectionSimulatorApp from './components/ust-leak-detection-simulator/UstLeakDetectionSimulatorApp';
+import VaporLossAnimationApp from './components/vapor-loss-animation/VaporLossAnimationApp';
+import NitrogenPressurizationSimulatorApp from './components/nitrogen-pressurization-simulator/NitrogenPressurizationSimulatorApp';
+import PressureDecayTestApp from './components/pressure-decay-test/PressureDecayTestApp';
+import VaporPathBlockageTestApp from './components/vapor-path-blockage-test/VaporPathBlockageTestApp';
+import DynamicBackpressureTestApp from './components/dynamic-backpressure-test/DynamicBackpressureTestApp';
+import LiquidLeakDetectionApp from './components/liquid-leak-detection/LiquidLeakDetectionApp';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<string | null>(null);
@@ -46,14 +56,19 @@ const App: React.FC = () => {
       case 'recovered-gasoline-quality':
         return <OverviewPage />;
       case 'pressure-decay-test':
+        return <PressureDecayTestApp />;
       case 'vapor-path-blockage-test':
+        return <VaporPathBlockageTestApp />;
       case 'dynamic-backpressure-test':
+        return <DynamicBackpressureTestApp />;
       case 'liquid-leak-detection':
+        return <LiquidLeakDetectionApp />;
       case 'olfactory-sniff-test':
         return <OdorTestAnimationApp />;
       case 'auditory-listening-test':
+        return <AuditoryTestApp />;
       case 'thermal-imaging-test':
-        return <AcousticThermalFootprintAssessmentApp />;
+        return <ThermalTestApp />;
       case 'electrical-usage-test':
         return <VruElectricalUsageTestingAnimationApp />;
       case 'network-connectivity-test':
@@ -62,6 +77,16 @@ const App: React.FC = () => {
         return <VruValidationProtocolApp />;
       case 'overview':
         return <VruValidationProtocolApp />;
+      case 'product-recovery-protocol-visualizer':
+        return <ProductRecoveryProtocolVisualizerApp />;
+      case 'salinity-evaporation-simulator':
+        return <SalinityEvaporationSimulatorApp />;
+      case 'ust-leak-detection-simulator':
+        return <UstLeakDetectionSimulatorApp />;
+      case 'vapor-loss-animation':
+        return <VaporLossAnimationApp />;
+      case 'nitrogen-pressurization-simulator':
+        return <NitrogenPressurizationSimulatorApp />;
       case 'test-procedure': // This case is for a generic test procedure page, if needed
         return <TestProcedurePage />;
       default:
