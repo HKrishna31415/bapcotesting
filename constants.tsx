@@ -85,16 +85,16 @@ export const TEST_DATA: TestInfo[] = [
     path: 'total-emissions-compliance',
     icon: <FaSmog className="w-8 h-8" />,
     requirements: [
-      'Simulates various emissions compliance tests for vapor recovery systems.',
-      'Visualizes the testing process and data collection.',
-      'Highlights key parameters and their impact on compliance.',
-      'Provides insights into regulatory requirements and testing procedures.'
+      'Outline the test criteria for emissions compliance of vapor recovery systems.',
+      'Present the testing process and data collection methodology.',
+      'Highlight key parameters and their impact on compliance.',
+      'Detail regulatory requirements and testing procedures for BAPCO.'
     ],
     promises: [
-      'Interactive animation to understand emissions compliance testing.',
-      'Clear visual representation of testing dynamics.',
-      'Educational tool for demonstrating regulatory adherence.',
-      'Provides insights into environmental protection and compliance.'
+      'Demonstrate our machine capabilities for emissions compliance testing.',
+      'Provide clear visual representation of testing dynamics.',
+      'Ensure adherence to regulatory standards for BAPCO.',
+      'Offer insights into environmental protection and compliance for BAPCO operations.'
     ],
     highlighted: true,
   },
@@ -104,16 +104,16 @@ export const TEST_DATA: TestInfo[] = [
     path: 'vapor-loss-animation',
     icon: <FaWind className="w-8 h-8" />,
     requirements: [
-      'Animates the process of vapor loss from fuel systems.',
-      'Illustrates different scenarios leading to vapor emissions.',
-      'Demonstrates the impact of temperature, pressure, and fuel composition.',
-      'Visualizes methods to mitigate vapor loss.'
+      'Present the process of vapor loss from fuel systems.',
+      'Illustrate different scenarios leading to vapor emissions.',
+      'Demonstrate the impact of temperature, pressure, and fuel composition on vapor loss.',
+      'Outline methods to mitigate vapor loss and our machine\'s role.'
     ],
     promises: [
-      'Clear visual understanding of vapor loss mechanisms.',
-      'Insights into factors influencing vapor emissions.',
-      'Educational tool for promoting best practices in fuel handling.',
-      'Highlights the importance of vapor recovery in reducing environmental impact.'
+      'Provide clear visual understanding of vapor loss mechanisms.',
+      'Offer insights into factors influencing vapor emissions.',
+      'Showcase best practices in fuel handling and our machine\'s contribution.',
+      'Highlight the importance of vapor recovery in reducing environmental impact for BAPCO.'
     ],
     highlighted: true,
   },
@@ -123,16 +123,16 @@ export const TEST_DATA: TestInfo[] = [
     path: 'leak-detection-method-explorer',
     icon: <LeakIcon className="w-8 h-8" />,
     requirements: [
-      'Explores various methods for detecting leaks in fuel systems.',
-      'Compares and contrasts different leak detection technologies.',
-      'Provides visual examples of leak detection in action.',
-      'Discusses the pros and cons of each method.'
+      'Present various methods for detecting leaks in fuel systems.',
+      'Compare and contrast different leak detection technologies used by our machines.',
+      'Provide visual examples of our leak detection in action.',
+      'Discuss the advantages of our leak detection methods for BAPCO.'
     ],
     promises: [
-      'Comprehensive overview of leak detection techniques.',
-      'Guidance on selecting appropriate leak detection methods.',
-      'Enhanced understanding of fuel system integrity.',
-      'Promotes proactive measures for environmental protection.'
+      'Offer a comprehensive overview of our leak detection techniques.',
+      'Provide guidance on selecting appropriate leak detection methods for BAPCO.',
+      'Enhance understanding of fuel system integrity through our solutions.',
+      'Promote proactive measures for environmental protection with our technology.'
     ],
     highlighted: true,
   },
@@ -142,17 +142,17 @@ export const TEST_DATA: TestInfo[] = [
     path: 'gasoline-vapor-recovery-visualizer',
     icon: <FaGasPump className="w-8 h-8" />,
 requirements: [
-      'Measure the total volume of vapor recovered during a dispensing event.',
-      'Compare recovered volume to dispensed fuel volume to calculate efficiency.',
-      'Ensure recovery efficiency meets regulatory standards (e.g., 95% or higher).',
-      'Account for temperature and pressure variations during testing.'
+      'Measure the total volume of vapor recovered during a dispensing event using our machines.',
+      'Compare recovered volume to dispensed fuel volume to calculate efficiency for BAPCO.',
+      'Ensure recovery efficiency meets regulatory standards (e.g., 95% or higher) with our systems.',
+      'Account for temperature and pressure variations during testing with our equipment.'
     ],
     promises: [
-      'Accurate quantification of vapor recovery efficiency.',
-      'Verification of compliance with local and federal recovery mandates.',
-      'Identification of systems operating below optimal recovery rates.',
-      'Data-driven insights for improving VRU performance and reducing emissions.',
-      'Recovery ratio must be >0.3% of throughput for stations selling < 2M liters/month.'
+      'Provide accurate quantification of vapor recovery efficiency for BAPCO.',
+      'Verify compliance with local and federal recovery mandates through our testing.',
+      'Identify systems operating below optimal recovery rates for BAPCO.',
+      'Deliver data-driven insights for improving VRU performance and reducing emissions for BAPCO.',
+      'Ensure recovery ratio is >0.3% of throughput for stations selling < 2M liters/month.'
     ],
     highlighted: true,
   },
@@ -162,16 +162,16 @@ requirements: [
     path: 'ust-leak-detection-simulator',
     icon: <UstLeakIcon className="w-8 h-8" />,
     requirements: [
-      'Simulates the CARB Test Procedure TP-201.1 for UST leak detection.',
-      'Visualizes pressure changes in an underground storage tank system.',
-      'Demonstrates pressurization, stabilization, and monitoring phases.',
-      'Allows selection of leaking or sealed tank scenarios.'
+      'Outline the CARB Test Procedure TP-201.1 for UST leak detection.',
+      'Present pressure changes in an underground storage tank system.',
+      'Demonstrate pressurization, stabilization, and monitoring phases.',
+      'Showcase our capabilities in handling leaking or sealed tank scenarios.'
     ],
     promises: [
-      'Interactive simulation to understand UST leak detection principles.',
-      'Clear visual representation of tank pressure dynamics.',
-      'Educational tool for demonstrating environmental compliance procedures.',
-      'Provides insights into fuel storage safety and regulations.'
+      'Provide a clear understanding of our UST leak detection principles.',
+      'Offer clear visual representation of tank pressure dynamics.',
+      'Demonstrate environmental compliance procedures through our technology.',
+      'Deliver insights into fuel storage safety and regulations for BAPCO.'
     ],
     highlighted: true,
   },
@@ -181,14 +181,14 @@ requirements: [
     path: 'salinity-evaporation-simulator',
     icon: <SalinityIcon className="w-8 h-8" />,
     requirements: [
-      'Simulates the evaporation of gasoline and the increase in precipitates.',
-      'Visualizes the separation of pure gasoline from additives.',
-      'Demonstrates the concept of concentration due to evaporation.',
-      'Allows adjustment of initial concentration for different scenarios.'
+      'Present the evaporation of gasoline and the increase in precipitates.',
+      'Showcase the separation of pure gasoline from additives.',
+      'Demonstrate the concept of concentration due to evaporation.',
+      'Allow adjustment of initial concentration for different scenarios to BAPCO.'
     ],
     promises: [
-      'Interactive simulation to understand additives and evaporation principles.',
-      'Clear visual representation of gasoline and additive dynamics.',
+      'Provide a clear understanding of additives and evaporation principles for BAPCO.',
+      'Offer clear visual representation of gasoline and additive dynamics for BAPCO.'
     ],
     highlighted: true,
   },
@@ -198,16 +198,16 @@ requirements: [
     path: 'product-recovery-protocol-visualizer',
     icon: <ProtocolIcon className="w-8 h-8" />,
     requirements: [
-      'Follows a three-phase protocol for product recovery.',
-      'Includes neat sample characterization, lab blend simulation, and in-situ UST monitoring.',
-      'Ensures recovered product meets ASTM standards and BAPCO specs.',
-      'Requires weekly dispenser sample testing during in-situ monitoring.'
+      'Present our three-phase protocol for product recovery for BAPCO.',
+      'Include neat sample characterization, lab blend simulation, and in-situ UST monitoring.',
+      'Ensure recovered product meets ASTM standards and BAPCO specs with our process.',
+      'Detail weekly dispenser sample testing during in-situ monitoring for BAPCO.'
     ],
     promises: [
-      'Visual representation of each phase of the product recovery protocol.',
-      'Clear understanding of the steps involved in ensuring product quality.',
-      'Highlights key testing and monitoring activities at each stage.',
-      'Provides confidence in the quality and usability of recovered product.'
+      'Provide a visual representation of each phase of our product recovery protocol.',
+      'Offer a clear understanding of the steps involved in ensuring product quality for BAPCO.',
+      'Highlight key testing and monitoring activities at each stage for BAPCO.',
+      'Instill confidence in the quality and usability of recovered product for BAPCO.'
     ],
     highlighted: true,
   },
@@ -217,16 +217,16 @@ requirements: [
     path: 'recovered-gasoline-quality',
     icon: <RecoveryQualityIcon className="w-8 h-8" />,
     requirements: [
-      'Sample and test recovered liquid for contaminants (e.g., water).',
-      'Ensure recovered fuel meets ASTM standards for gasoline.',
-      'Prevent degradation of fuel quality in the main tank.',
-      'Test for phase separation and particulate matter.'
+      'Sample and test recovered liquid for contaminants (e.g., water) for BAPCO.',
+      'Ensure recovered fuel meets ASTM standards for gasoline for BAPCO.',
+      'Prevent degradation of fuel quality in the main tank for BAPCO.',
+      'Test for phase separation and particulate matter for BAPCO.'
     ],
     promises: [
-      'Laboratory analysis of your recovered fuel.',
-      'Protection of your entire fuel inventory from contamination.',
-      'Guarantee that your customers receive the highest quality fuel.',
-      'Detailed report on fuel purity and recommendations.'
+      'Provide laboratory analysis of recovered fuel for BAPCO.',
+      'Ensure protection of BAPCO\'s entire fuel inventory from contamination.',
+      'Guarantee that BAPCO\'s customers receive the highest quality fuel.',
+      'Deliver a detailed report on fuel purity and recommendations for BAPCO.'
     ],
     highlighted: true,
   },
@@ -236,16 +236,16 @@ requirements: [
     path: 'acoustic-thermal-footprint',
     icon: <AcousticThermalIcon className="w-8 h-8" />,
     requirements: [
-      'Measure sound levels at various distances from the unit.',
-      'Monitor chassis, cooling system, and ambient air temperatures.',
-      'Simulate the effect of a shade canopy on thermal performance.',
-      'Assess the impact of temperature reduction on power consumption.'
+      'Measure sound levels at various distances from the unit for BAPCO.',
+      'Monitor chassis, cooling system, and ambient air temperatures for BAPCO.',
+      'Simulate the effect of a shade canopy on thermal performance for BAPCO.',
+      'Assess the impact of temperature reduction on power consumption for BAPCO.'
     ],
     promises: [
-      'Detailed report on acoustic and thermal characteristics.',
-      'Verification of compliance with noise regulations.',
-      'Quantifiable data on the benefits of shading for efficiency.',
-      'Insights into optimizing unit placement and operation.'
+      'Provide a detailed report on acoustic and thermal characteristics for BAPCO.',
+      'Verify compliance with noise regulations for BAPCO.',
+      'Offer quantifiable data on the benefits of shading for efficiency for BAPCO.',
+      'Deliver insights into optimizing unit placement and operation for BAPCO.'
     ],
     highlighted: false,
   },
@@ -255,16 +255,16 @@ requirements: [
     path: 'nitrogen-pressurization-simulator',
     icon: <NitrogenIcon className="w-8 h-8" />,
     requirements: [
-      'Pressurize the VRU installation and gas station lines with nitrogen.',
-      'Monitor pressure decay to identify potential vapor leaks.',
-      'Utilize specialized equipment to pinpoint leak locations.',
-      'Ensure system integrity prior to fuel introduction.'
+      'Pressurize the VRU installation and gas station lines with nitrogen for BAPCO.',
+      'Monitor pressure decay to identify potential vapor leaks for BAPCO.',
+      'Utilize specialized equipment to pinpoint leak locations for BAPCO.',
+      'Ensure system integrity prior to fuel introduction for BAPCO.'
     ],
     promises: [
-      'Accurate identification of vapor leaks in the VRU and gas station infrastructure.',
-      'Verification of system integrity before operation.',
-      'Prevention of environmental contamination and product loss.',
-      'Compliance with safety and regulatory standards for vapor recovery systems.'
+      'Provide accurate identification of vapor leaks in the VRU and gas station infrastructure for BAPCO.',
+      'Verify system integrity before operation for BAPCO.',
+      'Prevent environmental contamination and product loss for BAPCO.',
+      'Ensure compliance with safety and regulatory standards for vapor recovery systems for BAPCO.'
     ],
     highlighted: false,
   },
@@ -274,13 +274,13 @@ requirements: [
     path: 'recovered-gasoline-amount',
     icon: <RecoveryAmountIcon className="w-8 h-8" />,
     requirements: [
-      'Ensure gasoline quality remains consistent throughout the recovery process.',
-      'Monitor for any signs of Ethanol impurity in the recovered product.',
-      'Third party testing on fuel composition and purity.'
+      'Ensure gasoline quality remains consistent throughout the recovery process with our machines.',
+      'Monitor for any signs of Ethanol impurity in the recovered product for BAPCO.',
+      'Provide third-party testing on fuel composition and purity for BAPCO.'
     ],
     promises: [
-      'Verify that you are reclaiming valuable product.',
-      'Clear ROI analysis based on recovered gasoline volume.'
+      'Verify that BAPCO is reclaiming valuable product.',
+      'Present clear ROI analysis based on recovered gasoline volume for BAPCO.'
     ],
     highlighted: false,
   },
@@ -290,16 +290,16 @@ requirements: [
     path: 'dynamic-backpressure-test',
     icon: <FlowRateIcon className="w-8 h-8" />,
     requirements: [
-      'Ensure backpressure remains below maximum allowable levels during fuel dispensing.',
-      'Test performed at various flow rates.',
-      'System must not impede vehicle refueling.',
-      'Continuous monitoring during the test cycle.'
+      'Ensure backpressure remains below maximum allowable levels during fuel dispensing for BAPCO.',
+      'Perform tests at various flow rates for BAPCO.',
+      'Ensure our system does not impede vehicle refueling for BAPCO.',
+      'Provide continuous monitoring during the test cycle for BAPCO.'
     ],
     promises: [
-      'Simulation of real-world refueling scenarios.',
-      'Graph and data summary of pressure vs. flow rate.',
-      'Guaranteed compliance with regulatory standards.',
-      'Minimal disruption to site operations during testing.'
+      'Offer simulation of real-world refueling scenarios for BAPCO.',
+      'Provide graph and data summary of pressure vs. flow rate for BAPCO.',
+      'Guarantee compliance with regulatory standards for BAPCO.',
+      'Ensure minimal disruption to site operations during testing for BAPCO.'
     ],
     highlighted: false,
   },
@@ -309,16 +309,16 @@ requirements: [
     path: 'olfactory-sniff-test',
     icon: <OlfactoryIcon className="w-8 h-8" />,
     requirements: [
-      'Technician methodically checks for fuel odors around key points.',
-      'Requires documented wind conditions for accurate tracing.',
-      'Any detected fuel odor constitutes a potential test failure.',
-      'Performed by a certified and experienced technician.',
+      'Our technician methodically checks for fuel odors around key points for BAPCO.',
+      'We document wind conditions for accurate tracing for BAPCO.',
+      'Any detected fuel odor constitutes a potential test failure for BAPCO.',
+      'Tests are performed by our certified and experienced technicians for BAPCO.',
     ],
     promises: [
-      'Creation of a site map with vapor concentration isopleths (odor maps).',
-      'Defining permissible setback distances for sensitive areas like on-site restaurants.',
-      'Clear communication of findings, backed by dispersion data.',
-      'Prioritizing safety and immediate action if odors exceed permissible levels.',
+      'Creation of a site map with vapor concentration isopleths (odor maps) for BAPCO.',
+      'Defining permissible setback distances for sensitive areas like on-site restaurants for BAPCO.',
+      'Clear communication of findings, backed by dispersion data for BAPCO.',
+      'Prioritizing safety and immediate action if odors exceed permissible levels for BAPCO.'
     ],
     highlighted: false,
   },
@@ -328,10 +328,10 @@ requirements: [
     path: 'electrical-usage-test',
     icon: <ElectricIcon className="w-8 h-8" />,
     requirements: [
-      'Measure power consumption of VRU components (e.g., blower, control panel).','Compare actual usage against manufacturer specifications.','Identify any abnormal power draws indicating inefficiencies or faults.','Test performed under various operational loads.'
+      'Measure power consumption of VRU components (e.g., blower, control panel) for BAPCO.','Compare actual usage against manufacturer specifications for BAPCO.','Identify any abnormal power draws indicating inefficiencies or faults for BAPCO.','Perform tests under various operational loads for BAPCO.'
     ],
     promises: [
-      'Detailed report on energy consumption and cost analysis.','Recommendations for optimizing electrical efficiency.','Verification of compliance with energy efficiency standards.','Proactive identification of components nearing end-of-life.'
+      'Provide a detailed report on energy consumption and cost analysis for BAPCO.','Offer recommendations for optimizing electrical efficiency for BAPCO.','Verify compliance with energy efficiency standards for BAPCO.','Proactively identify components nearing end-of-life for BAPCO.'
     ],
     highlighted: false,
   },
@@ -341,10 +341,10 @@ requirements: [
     path: 'network-connectivity-test',
     icon: <WifiIcon className="w-8 h-8" />,
     requirements: [
-      'Verify stable network connection for remote monitoring and data transfer.','Test data transmission rates and latency.','Ensure secure communication protocols are in place.','Assess signal strength at all critical points.'
+      'Verify stable network connection for remote monitoring and data transfer for BAPCO.','Test data transmission rates and latency for BAPCO.','Ensure secure communication protocols are in place for BAPCO.','Assess signal strength at all critical points for BAPCO.'
     ],
     promises: [
-      'Comprehensive network performance report.','Troubleshooting and resolution of connectivity issues.','Enhanced reliability for remote diagnostics and updates.','Secure and seamless integration with your existing IT infrastructure.'
+      'Provide a comprehensive network performance report for BAPCO.','Offer troubleshooting and resolution of connectivity issues for BAPCO.','Ensure enhanced reliability for remote diagnostics and updates for BAPCO.','Provide secure and seamless integration with BAPCO\'s existing IT infrastructure.'
     ],
     highlighted: false,
   }

@@ -49,7 +49,7 @@ const App: React.FC = () => {
 
 
   return (
-    <div className="min-h-screen font-sans text-slate-800 dark:text-slate-200">
+    <div className="min-h-screen font-sans text-slate-800 dark:text-slate-200 bg-gradient-to-br from-red-700 to-blue-700">
       <main className="container mx-auto px-4 py-8 sm:py-12">
         <Header />
         <Routes>
