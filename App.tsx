@@ -32,6 +32,7 @@ import ProductRecoveryProtocolVisualizerApp from './components/product-recovery-
 import SalinityEvaporationSimulatorApp from './components/salinity-evaporation-simulator/SalinityEvaporationSimulatorApp';
 import UstLeakDetectionSimulatorApp from './components/ust-leak-detection-simulator/UstLeakDetectionSimulatorApp';
 import NitrogenPressurizationSimulatorApp from './components/nitrogen-pressurization-simulator/NitrogenPressurizationSimulatorApp';
+import GasolineQualityRecoverySimulatorApp from './components/gasoline-quality-recovery-simulator/App';
 
 import AcousticThermalFootprintAssessmentApp from "./components/acoustic-&-thermal-footprint-assessment/AcousticThermalFootprintAssessmentApp";
 import GasolineVaporRecoveryVisualizerApp from './components/gasoline-vapor-recovery-visualizer/Promises';
@@ -63,7 +64,7 @@ const App: React.FC = () => {
           <Route path="/voc-emissions-measurement-animator" element={<VocEmissionsMeasurementAnimatorApp />} />
           <Route path="/total-emissions-compliance" element={<EmissionsComplianceTestingAnimatorApp />} />
           <Route path="/recovered-gasoline-amount" element={<EthanolGasolineEvaporationStoryApp />} />
-          <Route path="/recovered-gasoline-quality" element={<OverviewPage />} />
+          <Route path="/recovered-gasoline-quality" element={<GasolineQualityRecoverySimulatorApp />} />
           
           <Route path="/dynamic-backpressure-test" element={<DynamicBackpressureTestSimulatorApp />} />
           {/*  */}
