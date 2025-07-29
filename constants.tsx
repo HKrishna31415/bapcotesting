@@ -80,25 +80,6 @@ const SalinityIcon: React.FC<{ className?: string }> = ({ className }) => (
 
 export const TEST_DATA: TestInfo[] = [
   {
-    id: 18,
-    title: 'Acoustic & Thermal Footprint',
-    path: 'acoustic-thermal-footprint',
-    icon: <AcousticThermalIcon className="w-8 h-8" />,
-    requirements: [
-      'Measure sound levels at various distances from the unit.',
-      'Monitor chassis, cooling system, and ambient air temperatures.',
-      'Simulate the effect of a shade canopy on thermal performance.',
-      'Assess the impact of temperature reduction on power consumption.'
-    ],
-    promises: [
-      'Detailed report on acoustic and thermal characteristics.',
-      'Verification of compliance with noise regulations.',
-      'Quantifiable data on the benefits of shading for efficiency.',
-      'Insights into optimizing unit placement and operation.'
-    ],
-    highlighted: false,
-  },
-  {
     id: 19,
     title: 'Emissions Compliance Testing Animator',
     path: 'total-emissions-compliance',
@@ -176,26 +157,6 @@ requirements: [
     highlighted: true,
   },
   {
-    id: 17,
-    title: 'Nitrogen Pressurization Test for Vapor Leak Detection',
-    path: 'nitrogen-pressurization-simulator',
-    icon: <NitrogenIcon className="w-8 h-8" />,
-    requirements: [
-      'Pressurize the VRU installation and gas station lines with nitrogen.',
-      'Monitor pressure decay to identify potential vapor leaks.',
-      'Utilize specialized equipment to pinpoint leak locations.',
-      'Ensure system integrity prior to fuel introduction.'
-    ],
-    promises: [
-      'Accurate identification of vapor leaks in the VRU and gas station infrastructure.',
-      'Verification of system integrity before operation.',
-      'Prevention of environmental contamination and product loss.',
-      'Compliance with safety and regulatory standards for vapor recovery systems.'
-    ],
-    highlighted: false,
-  },
-
-  {
     id: 15,
     title: 'UST Leak Detection Simulator',
     path: 'ust-leak-detection-simulator',
@@ -251,22 +212,6 @@ requirements: [
     highlighted: true,
   },
   {
-    id: 10,
-    title: 'Ethanol Impact',
-    path: 'recovered-gasoline-amount',
-    icon: <RecoveryAmountIcon className="w-8 h-8" />,
-    requirements: [
-      'Ensure gasoline quality remains consistent throughout the recovery process.',
-      'Monitor for any signs of Ethanol impurity in the recovered product.',
-      'Third party testing on fuel composition and purity.'
-    ],
-    promises: [
-      'Verify that you are reclaiming valuable product.',
-      'Clear ROI analysis based on recovered gasoline volume.'
-    ],
-    highlighted: false,
-  },
-  {
     id: 11,
     title: 'Recovered Gasoline Quality',
     path: 'recovered-gasoline-quality',
@@ -284,6 +229,60 @@ requirements: [
       'Detailed report on fuel purity and recommendations.'
     ],
     highlighted: true,
+  },
+  {
+    id: 18,
+    title: 'Acoustic & Thermal Footprint',
+    path: 'acoustic-thermal-footprint',
+    icon: <AcousticThermalIcon className="w-8 h-8" />,
+    requirements: [
+      'Measure sound levels at various distances from the unit.',
+      'Monitor chassis, cooling system, and ambient air temperatures.',
+      'Simulate the effect of a shade canopy on thermal performance.',
+      'Assess the impact of temperature reduction on power consumption.'
+    ],
+    promises: [
+      'Detailed report on acoustic and thermal characteristics.',
+      'Verification of compliance with noise regulations.',
+      'Quantifiable data on the benefits of shading for efficiency.',
+      'Insights into optimizing unit placement and operation.'
+    ],
+    highlighted: false,
+  },
+  {
+    id: 17,
+    title: 'Nitrogen Pressurization Test for Vapor Leak Detection',
+    path: 'nitrogen-pressurization-simulator',
+    icon: <NitrogenIcon className="w-8 h-8" />,
+    requirements: [
+      'Pressurize the VRU installation and gas station lines with nitrogen.',
+      'Monitor pressure decay to identify potential vapor leaks.',
+      'Utilize specialized equipment to pinpoint leak locations.',
+      'Ensure system integrity prior to fuel introduction.'
+    ],
+    promises: [
+      'Accurate identification of vapor leaks in the VRU and gas station infrastructure.',
+      'Verification of system integrity before operation.',
+      'Prevention of environmental contamination and product loss.',
+      'Compliance with safety and regulatory standards for vapor recovery systems.'
+    ],
+    highlighted: false,
+  },
+  {
+    id: 10,
+    title: 'Ethanol Impact',
+    path: 'recovered-gasoline-amount',
+    icon: <RecoveryAmountIcon className="w-8 h-8" />,
+    requirements: [
+      'Ensure gasoline quality remains consistent throughout the recovery process.',
+      'Monitor for any signs of Ethanol impurity in the recovered product.',
+      'Third party testing on fuel composition and purity.'
+    ],
+    promises: [
+      'Verify that you are reclaiming valuable product.',
+      'Clear ROI analysis based on recovered gasoline volume.'
+    ],
+    highlighted: false,
   },
   {
     id: 3,
