@@ -1,12 +1,9 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-interface HeaderProps {
-  currentPage: string | null;
-  setCurrentPage: (page: string | null) => void;
-}
-
-const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
+const Header: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <header className="text-center py-8 px-4 bg-gray-800 text-white shadow-lg">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
@@ -15,7 +12,9 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
         </h1>
         <nav className="flex space-x-4">
           <button
-            onClick={() => setCurrentPage(null)}
+            onClick={() => {
+              navigate('/');
+            }}
             className="px-4 py-2 rounded-md bg-blue-600 hover:bg-blue-700 transition-colors duration-200 ease-in-out text-white font-medium flex items-center space-x-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
@@ -24,7 +23,9 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
             <span>Back to Home</span>
           </button>
           <button
-            onClick={() => setCurrentPage('overview')}
+            onClick={() => {
+              navigate('/overview');
+            }}
             className="px-4 py-2 rounded-md bg-green-600 hover:bg-green-700 transition-colors duration-200 ease-in-out text-white font-medium flex items-center space-x-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">

@@ -19,6 +19,7 @@ const INITIAL_ACOUSTIC_DATA: AcousticData[] = [
 const INITIAL_THERMAL_DATA: ThermalDataPoint[] = [{ time: 0, chassis: 25, cooling: 23, air: 22 }];
 
 export default function AcousticThermalFootprintAssessmentApp() {
+    console.log('AcousticThermalFootprintAssessmentApp is rendering');
     const [isTesting, setIsTesting] = useState(false);
     const [isCanopyVisible, setIsCanopyVisible] = useState(false);
     const [isShadeTestCompleted, setIsShadeTestCompleted] = useState(false);

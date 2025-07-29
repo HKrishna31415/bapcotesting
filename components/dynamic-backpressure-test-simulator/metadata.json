@@ -1,0 +1,5 @@
+{
+  "name": "Dynamic Backpressure Test Simulator",
+  "description": "An interactive web application that simulates and visualizes a dynamic backpressure test for fuel dispensing systems.",
+  "requestFramePermissions": []
+}

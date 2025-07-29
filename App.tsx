@@ -17,12 +17,10 @@ const TestProcedurePage: React.FC = () => {
     </div>
   );
 };
-import { useState } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Header from './components/Header';
 import TestCard from './components/TestCard';
 import { TEST_DATA } from './constants';
-import AuditoryTestApp from './components/auditory-listening-test/AuditoryTestApp';
-import ThermalTestApp from './components/thermal-imaging-test/ThermalTestApp';
 import AdvancedRecoveryMachineComponentListApp from './components/advanced-recovery-machine---component-list/AdvancedRecoveryMachineComponentListApp';
 import EthanolGasolineEvaporationStoryApp from './components/ethanol-gasoline-evaporation-story/EthanolGasolineEvaporationStoryApp';
 import OdorTestAnimationApp from './components/odor-test-animation/OdorTestAnimationApp';
@@ -33,81 +31,60 @@ import VruValidationProtocolApp from './components/vru-validation-protocol/VruVa
 import ProductRecoveryProtocolVisualizerApp from './components/product-recovery-protocol-visualizer/ProductRecoveryProtocolVisualizerApp';
 import SalinityEvaporationSimulatorApp from './components/salinity-evaporation-simulator/SalinityEvaporationSimulatorApp';
 import UstLeakDetectionSimulatorApp from './components/ust-leak-detection-simulator/UstLeakDetectionSimulatorApp';
-import VaporLossAnimationApp from './components/vapor-loss-animation/VaporLossAnimationApp';
 import NitrogenPressurizationSimulatorApp from './components/nitrogen-pressurization-simulator/NitrogenPressurizationSimulatorApp';
-import PressureDecayTestApp from './components/pressure-decay-test/PressureDecayTestApp';
-import VaporPathBlockageTestApp from './components/vapor-path-blockage-test/VaporPathBlockageTestApp';
-import DynamicBackpressureTestApp from './components/dynamic-backpressure-test/DynamicBackpressureTestApp';
-import LiquidLeakDetectionApp from './components/liquid-leak-detection/LiquidLeakDetectionApp';
+
+import AcousticThermalFootprintAssessmentApp from "./components/acoustic-&-thermal-footprint-assessment/AcousticThermalFootprintAssessmentApp";
+import GasolineVaporRecoveryVisualizerApp from './components/gasoline-vapor-recovery-visualizer/Promises';
+import LeakDetectionMethodExplorerApp from './components/leak-detection-method-explorer/App';
+import NitrogenLeakTestSimulatorApp from './components/nitrogen-leak-test-simulator/App';
+import UstVaporLossPrinciplesApp from './components/ust-vapor-loss-principles/App';
+import EmissionsComplianceTestingAnimatorApp from './components/emissions-compliance-testing-animator/Emissions';
+import DynamicBackpressureTestSimulatorApp from './components/dynamic-backpressure-test-simulator/Backpressure';
+import VaporLossAnimationApp from './components/vapor-loss-animation(1)/App';
 
 const App: React.FC = () => {
-  const [currentPage, setCurrentPage] = useState<string | null>(null);
+  const navigate = useNavigate();
 
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'advanced-recovery-machine-component-list':
-        return <AdvancedRecoveryMachineComponentListApp />;
-      case 'voc-emissions-measurement-animator':
-        return <VocEmissionsMeasurementAnimatorApp />;
-      case 'total-emissions-compliance':
-        return <VocEmissionsMeasurementAnimatorApp />;
-      case 'recovered-gasoline-amount':
-        return <EthanolGasolineEvaporationStoryApp />;
-      case 'recovered-gasoline-quality':
-        return <OverviewPage />;
-      case 'pressure-decay-test':
-        return <PressureDecayTestApp />;
-      case 'vapor-path-blockage-test':
-        return <VaporPathBlockageTestApp />;
-      case 'dynamic-backpressure-test':
-        return <DynamicBackpressureTestApp />;
-      case 'liquid-leak-detection':
-        return <LiquidLeakDetectionApp />;
-      case 'olfactory-sniff-test':
-        return <OdorTestAnimationApp />;
-      case 'auditory-listening-test':
-        return <AuditoryTestApp />;
-      case 'thermal-imaging-test':
-        return <ThermalTestApp />;
-      case 'electrical-usage-test':
-        return <VruElectricalUsageTestingAnimationApp />;
-      case 'network-connectivity-test':
-        return <VruNetworkTestAnimatorApp />;
-      case 'vru-validation-protocol':
-        return <VruValidationProtocolApp />;
-      case 'overview':
-        return <VruValidationProtocolApp />;
-      case 'product-recovery-protocol-visualizer':
-        return <ProductRecoveryProtocolVisualizerApp />;
-      case 'salinity-evaporation-simulator':
-        return <SalinityEvaporationSimulatorApp />;
-      case 'ust-leak-detection-simulator':
-        return <UstLeakDetectionSimulatorApp />;
-      case 'vapor-loss-animation':
-        return <VaporLossAnimationApp />;
-      case 'nitrogen-pressurization-simulator':
-        return <NitrogenPressurizationSimulatorApp />;
-      case 'test-procedure': // This case is for a generic test procedure page, if needed
-        return <TestProcedurePage />;
-      default:
-        return (
-          <>
 
-            <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {TEST_DATA.map((test) => (
-                <TestCard key={test.id} {...test} onClick={() => setCurrentPage(test.path)} />
-              ))}
-            </div>
-          </>
-        );
-    }
-  };
 
   return (
     <div className="min-h-screen font-sans text-slate-800 dark:text-slate-200">
       <main className="container mx-auto px-4 py-8 sm:py-12">
-        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        {renderPage()}
+        <Header />
+        <Routes>
+          <Route path="/" element={
+            <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {TEST_DATA.map((test) => (
+                <TestCard key={test.id} {...test} onClick={() => navigate(`/${test.path}`)} />
+              ))}
+            </div>
+          } />
+          <Route path="/advanced-recovery-machine-component-list" element={<AdvancedRecoveryMachineComponentListApp />} />
+          <Route path="/voc-emissions-measurement-animator" element={<VocEmissionsMeasurementAnimatorApp />} />
+          <Route path="/total-emissions-compliance" element={<EmissionsComplianceTestingAnimatorApp />} />
+          <Route path="/recovered-gasoline-amount" element={<EthanolGasolineEvaporationStoryApp />} />
+          <Route path="/recovered-gasoline-quality" element={<OverviewPage />} />
+          
+          <Route path="/dynamic-backpressure-test" element={<DynamicBackpressureTestSimulatorApp />} />
+          {/*  */}
+          <Route path="/olfactory-sniff-test" element={<OdorTestAnimationApp />} />
+          <Route path="/electrical-usage-test" element={<VruElectricalUsageTestingAnimationApp />} />
+          <Route path="/network-connectivity-test" element={<VruNetworkTestAnimatorApp />} />
+          <Route path="/vru-validation-protocol" element={<VruValidationProtocolApp />} />
+          <Route path="/overview" element={<OverviewPage />} />
+          <Route path="/product-recovery-protocol-visualizer" element={<ProductRecoveryProtocolVisualizerApp />} />
+          <Route path="/salinity-evaporation-simulator" element={<SalinityEvaporationSimulatorApp />} />
+          <Route path="/ust-leak-detection-simulator" element={<UstLeakDetectionSimulatorApp />} />
+          <Route path="/nitrogen-pressurization-simulator" element={<NitrogenPressurizationSimulatorApp />} />
+          <Route path="/acoustic-thermal-footprint" element={<AcousticThermalFootprintAssessmentApp />} />
+          <Route path="/gasoline-vapor-recovery-visualizer" element={<GasolineVaporRecoveryVisualizerApp />} />
+          <Route path="/leak-detection-method-explorer" element={<LeakDetectionMethodExplorerApp />} />
+          <Route path="/nitrogen-leak-test-simulator" element={<NitrogenLeakTestSimulatorApp />} />
+          <Route path="/ust-vapor-loss-principles" element={<UstVaporLossPrinciplesApp />} />
+          <Route path="/dynamic-backpressure-test-simulator" element={<DynamicBackpressureTestSimulatorApp />} />
+          <Route path="/vapor-loss-animation" element={<VaporLossAnimationApp />} />
+          <Route path="/test-procedure" element={<TestProcedurePage />} />
+        </Routes>
       </main>
     </div>
   );

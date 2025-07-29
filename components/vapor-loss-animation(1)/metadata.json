@@ -1,0 +1,5 @@
+{
+  "name": "Vapor Loss Animation",
+  "description": "An interactive animation explaining breathing loss in fuel tanks, the problem of manifolding without a Vapor Recovery Unit (VRU), and the environmental and economic benefits of using a VRU.",
+  "requestFramePermissions": []
+}

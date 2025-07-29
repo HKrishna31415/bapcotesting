@@ -1,0 +1,6 @@
+
+{
+  "name": "Leak Detection Method Explorer",
+  "description": "An interactive guide to various methods used for detecting leaks in underground fuel storage systems, with animations for each technique.",
+  "requestFramePermissions": []
+}

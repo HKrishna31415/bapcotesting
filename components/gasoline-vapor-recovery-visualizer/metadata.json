@@ -1,0 +1,5 @@
+{
+  "name": "Gasoline Vapor Recovery Visualizer",
+  "description": "An animated visualization of the gasoline vapor recovery process at a gas station. It shows recovered gasoline being collected in a separate tank and highlights that this recovered amount represents 0.5% of the total gasoline sales throughput.",
+  "requestFramePermissions": []
+}

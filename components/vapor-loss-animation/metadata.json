@@ -1,5 +1,0 @@
-{
-  "name": "Vapor Loss Animation",
-  "description": "An animated demonstration of fuel tank vapor loss, comparing isolated tanks to manifolded tanks when the Vapor Recovery Unit (VRU) is off. This application uses framer-motion to create a scene-by-scene animation.",
-  "requestFramePermissions": []
-}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vapor Loss Animation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes vapor-rise {
+        from {
+          transform: translateY(0) scale(1);
+          opacity: 0.7;
+        }
+        50% {
+          opacity: 0.4;
+        }
+        to {
+          transform: translateY(-70px) translateX(20px) scale(0.5);
+          opacity: 0;
+        }
+      }
+      .animate-vapor-rise {
+        animation: vapor-rise infinite;
+      }
+
+      @keyframes inhale-flow {
+        from {
+          transform: translateY(-70px) scale(0.5);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0) scale(1);
+          opacity: 0.6;
+        }
+      }
+      .animate-inhale-flow {
+        animation: inhale-flow infinite;
+      }
+      
+      @keyframes wave {
+        0%, 100% { transform: translateX(0%); }
+        50% { transform: translateX(-50%); }
+      }
+
+      @keyframes pipe-flow {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .animate-pipe-flow {
+        animation: pipe-flow 1s linear infinite;
+      }
+
+      @keyframes pipe-flow-reversed {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      .animate-pipe-flow-reversed {
+        animation: pipe-flow-reversed 1s linear infinite;
+      }
+
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 3px) drop-shadow(0 0 8px); }
+        50% { filter: drop-shadow(0 0 5px) drop-shadow(0 0 12px); }
+      }
+      .animate-glow {
+        animation: glow 2.5s ease-in-out infinite;
+      }
+
+      @keyframes vapor-suck-in {
+        from {
+          transform: translate(var(--tx, 0), var(--ty, 0)) scale(1);
+          opacity: 0.8;
+        }
+        to {
+          transform: translate(0, 0) scale(0.1);
+          opacity: 0;
+        }
+      }
+      .animate-vapor-suck-in {
+        animation: vapor-suck-in linear infinite;
+      }
+      
+      body {
+        background-color: #0f172a; /* bg-slate-900 */
+        background-image: 
+          linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+        background-size: 30px 30px;
+        animation: pan-grid 60s linear infinite;
+      }
+
+      @keyframes pan-grid {
+        0% { background-position: 0% 0%; }
+        100% { background-position: 100% 100%; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-900 text-slate-100 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
